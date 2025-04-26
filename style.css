@@ -1,0 +1,299 @@
+/* Combined CSS for All Pages Including Responsive Navigation */
+
+/* Reset & Layout Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #5a189a;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffca3a;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  background: #555;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    width: 100%;
+    text-align: center;
+  }
+
+  header.open nav ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #5a189a;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Home Hero Section */
+.main-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f3f0ff;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #5a189a;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #5a189a;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #3c096c;
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, #7209b7 0%, #b5179e 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about-hero .tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* About Content Section */
+.about-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.about-content ul li {
+  margin-bottom: 5px;
+  list-style: disc;
+}
+
+/* Contact Form */
+.form-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  margin: 50px auto;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: #5a189a;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #f8f9fa;
+}
+
+.input-group.full {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #5a189a;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3c096c;
+}
+
+/* Responsive Box for Level 2 Task 2 */
+.responsive-box {
+  background: #007cf0;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background: #00b894;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* General Headings */
+h1, h2 {
+  color: #5a189a;
+}
+
+/* Media Queries for Mobile Layouts */
+@media (max-width: 768px) {
+  .main-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

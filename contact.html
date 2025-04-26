@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="responsive-box">
+    This box changes its style on smaller screens.
+  </div>
+<header>
+  <nav class="nav">
+    <div class="logo">Cognifyz</div>
+    <div class="menu-toggle" onclick="document.querySelector('header').classList.toggle('open')">☰ Menu</div>
+    <ul>
+      <li><a href="index.html" style="color: white;">Home</a></li>
+      <li><a href="about.html" style="color: white;">About</a></li>
+      <li><a href="contact.html" style="color: white;">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="form-container">
+  <h2>Submit your details, and let’s begin shaping your vision into reality.</h2>
+  <form>
+    <div class="input-row">
+      <div class="input-group">
+        <input type="email" placeholder="📧 Email*" required>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="👤 Full Name*" required>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="input-group">
+        <input type="tel" placeholder="📱 Contact No.*" required>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="⚧ Gender*" required>
+      </div>
+    </div>
+
+    <div class="input-group full">
+      <textarea placeholder="✏️ Queries (if Any)"></textarea>
+    </div>
+
+    <button type="submit">SEND</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Pranav Lohar | Cognifyz Technologies Internship</p>
+</footer>
+
+</body>
+</html>
